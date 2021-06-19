@@ -36,7 +36,7 @@ textarea {
   border-top: 1px solid white;
 }
 
-.hour {
+th {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
@@ -69,3 +69,4 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
