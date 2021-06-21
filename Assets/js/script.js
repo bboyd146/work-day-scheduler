@@ -13,11 +13,11 @@ var a = parseInt(nineA);
 var b = parseInt(tenA);
 var c = parseInt(elevA);
 var d = parseInt(noonP);
-var e = parseInt(oneP);
-var f = parseInt(twoP);
-var g = parseInt(threeP);
-var h = parseInt(fourP);
-var i = parseInt(fiveP);
+var e = parseInt(oneP)+12;
+var f = parseInt(twoP)+12;
+var g = parseInt(threeP)+12;
+var h = parseInt(fourP)+12;
+var i = parseInt(fiveP)+12;
 
 // grabbing rows to change text background.
 var firstT = document.getElementById('task');
