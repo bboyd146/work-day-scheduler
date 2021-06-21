@@ -39,7 +39,7 @@ var rightNow = moment();
 // displays current time
 currentT.textContent = rightNow.format('dddd, MMMM Do');
 // time in hours. used for calender color changes
-var hours = moment().format('HH');
+var hours = parseInt(moment().format('HH'));
 console.log(hours);
 console.log(h);
 
