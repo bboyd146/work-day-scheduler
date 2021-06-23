@@ -179,18 +179,18 @@ $('.saveBtn').on('click', function (event) {
     
 
     
-    var thisss = $(this).parent('tr')
-    console.log(thisss);
-    // thisss.find('textarea').first().val()
+    var row = $(this).parent()
     
     console.log('element clicked')
-    var things = thisss.find('textarea');
-    console.log(things);
-    // console.log('element clicked')
-    // var things = $("textarea").val();
-    console.log(things);
+    var todos = $(row).closest("tr").children().find('textarea').val();
+    console.log('element clicked')
+    
+    console.log(todos);
+    var hourBlock = $(row).parent().children('th').val();
+    console.log(hourBlock);
     // // var storageTasks = JSON.stringify(savedTasks);
-    localStorage.setItem("savedTasks", JSON.stringify(things));
+    localStorage.setItem('savedTasks', todos);
+
 
 
     // var savedTasks = {
@@ -214,3 +214,6 @@ $('.saveBtn').on('click', function (event) {
     // localStorage.setItem("events", JSON.stringify(tasks));
     
 })
+
+$('#hr9').closest("tr").children().find('textarea').val(localStorage.getItem(todos.val()));
+
