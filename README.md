@@ -35,3 +35,4 @@ The following animation demonstrates the application functionality:
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
 
 
+Assets/_Users_bradleyboyd_projects_work-day-scheduler_index.html (2).png

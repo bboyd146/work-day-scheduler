@@ -186,10 +186,10 @@ $('.saveBtn').on('click', function (event) {
     console.log('element clicked')
     
     console.log(todos);
-    var hourBlock = $(row).parent().children('th').val();
+    var hourBlock = $(this).parent().parent().children().attr('id');
     console.log(hourBlock);
     // // var storageTasks = JSON.stringify(savedTasks);
-    localStorage.setItem('savedTasks', todos);
+    localStorage.setItem(hourBlock, todos);
 
 
 
@@ -216,4 +216,12 @@ $('.saveBtn').on('click', function (event) {
 })
 
 // $('#hr9').closest("tr").children().find('textarea').val(localStorage.getItem(todos.val()));
-
+$('#task').children().val(localStorage.getItem('hr9'));
+$('#task1').children().val(localStorage.getItem('hr10'));
+$('#task2').children().val(localStorage.getItem('hr11'));
+$('#task3').children().val(localStorage.getItem('hr12'));
+$('#task4').children().val(localStorage.getItem('hr13'));
+$('#task5').children().val(localStorage.getItem('hr14'));
+$('#task6').children().val(localStorage.getItem('hr15'));
+$('#task7').children().val(localStorage.getItem('hr16'));
+$('#task8').children().val(localStorage.getItem('hr17'));
