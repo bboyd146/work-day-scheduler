@@ -8,6 +8,7 @@ var twoP = document.getElementById('hr14').innerHTML;
 var threeP = document.getElementById('hr15').innerHTML;
 var fourP = document.getElementById('hr16').innerHTML;
 var fiveP = document.getElementById('hr17').innerHTML;
+console.log(nineA)
 // changing strings to integers for time change loops
 var a = parseInt(nineA);
 var b = parseInt(tenA);
